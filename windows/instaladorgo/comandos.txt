@@ -1,0 +1,11 @@
+dir: cd %GOPATH%
+
+Crear icono:
+%GOPATH%\src\github.com\cratonica\trayhost\make_icon.bat %GOPATH%\firma.ico
+
+repo:
+go get github.com/cratonica/trayhost
+
+compilar:
+go build -o firmador.exe src/main.go src/iconwin.go
+
