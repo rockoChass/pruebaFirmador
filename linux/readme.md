@@ -1,4 +1,5 @@
-  # Creacion de paquete .deb del FirmadorServidor
+  
+##Creacion de paquete .deb del FirmadorServidor
 
 Esta es una guia para la creación de paquetes (*.deb) para distribuciones debian
 
@@ -43,7 +44,7 @@ FirmadorServicio
         FirmadorServidor.jar           //jar que contiene los servicios REST
 ```
 
-#### Creacion del paquete
+#### Creación del paquete
 Para la creación del paquete se uso [FPM](https://github.com/jordansissel/fpm) que nos permite crear de manera sencilla los paquetes deseados, ejemplo:
 
 ```
