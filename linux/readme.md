@@ -59,7 +59,7 @@ Para obtener mayor detalle de la forma de parametrizar se peude consultar la wik
 sudo dpkg -i firmador-servicio_0.0.1_all.deb
 ```
 
-#### Ejecución del Servicio
+#### Opciones del Servicio
 
 ```
 sudo /etc/init.d/firmador-servicio start
