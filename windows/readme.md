@@ -1,18 +1,23 @@
-usando JSMooth-0.9.9-7 y Innosetup-5.5.9
+# Creación de Instalador Windows 32_64 bits
 
-logre instalar para windows 7 y 8 mas en windows 10 no es compatible como servicio demonio ni como aplicacion de escritorio
+Esta es una guía para crear un instalador (.exe) del FirmadorServidor
 
+## Prerequisitos en Windows
 
+Instalar git
+Intalar MinGW 
+Instalar go
+Instalar InnoSetup
 
-tambien usando este metodo se puede incrustar el JRE en el instalador, cuestion de que no es necesario tener instalado en la maquina java.
+## Descripción
 
+Esta guia contempla la creación de un ejecutable .exe, el cual al ejecutarse mostrara un TrayIcon (icono con menu):
 
-referencia: https://www.youtube.com/watch?v=Z_yySLN9068
+- La aplicación que se esta empaquetando es un servicio en segundo plano en formato .jar (puede ser cualquier programa ejecutable) 
+- Todos los archivo necesarios para ser instalado sera empaquetado usando la aplicacion InnoSetup
 
-*.jsmooth -> archivo de configuraci� Jsmooth	(para crear el instalador del .exe)
-*.iss 	-> archivo de configuraci�n InnoSetup  	(para transformar el jar en .exe {escritorio, servicio})
+## Creación del .exe
 
-NOTA: en el archivo *.iss hay que modificar el directorio considerando la url de la ubicacion de los archivos a cargarse
+#### Creación del arbol de directorios
 
-Para instalar como servicio se ejecuta el archivo installServicio.cmd
-Para desinstalar el servicio se ejecuta uninstallServicio.cmd
+#### Instalación del paquete
