@@ -4,10 +4,10 @@ Esta es una guía para crear un instalador (.exe) del FirmadorServidor
 
 ## Prerequisitos en Windows
 
-Instalar git
-Intalar MinGW 
-Instalar go
-Instalar InnoSetup
+- Instalar git
+- Intalar MinGW 
+- Instalar go
+- Instalar InnoSetup
 
 ## Descripción
 
