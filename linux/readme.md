@@ -32,7 +32,7 @@ FirmadorServicio
 +───etc                                 
 │   │   
 │   +───init.d
-│           adsib-lector-huellas        //archivo que configura los estados del servicio(start, stop, restart)
+│           firmador-servicio           //archivo que configura los estados del servicio(start, stop, restart)
 │   
 +───usr
     │   
