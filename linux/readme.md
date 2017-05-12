@@ -1,5 +1,5 @@
   
-## Creacion de paquete .deb del FirmadorServidor
+# Creacion de paquete .deb del FirmadorServidor
 
 Esta es una guia para la creación de paquetes (*.deb) para distribuciones debian
 
@@ -16,7 +16,7 @@ Esta guia contempla la creación de un paquete .deb, el ejemplo contempla las si
 - La aplicación que se esta empaquetando es un servicio en segundo plano en formato .jar (puede ser cualquier programa ejecutable)
 
 
-## Creacion del paquete
+## Creación del paquete
 
 #### Creación del arbol de directorios
 Se debe tener una carpeta que contendra la estructura de directorios, en este caso la carpeta tiene el nombre "FirmadorServicio", se debe considerar a esta carpeta como la raiz de nuestro sistema de archivos "/" y debemos replicar la estructura de carpetas que se copiaran al momento de la instalación.
