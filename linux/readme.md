@@ -38,10 +38,12 @@ FirmadorServicio
     │   
     +───bin
         │   
-        +───config
-        │       config.cfg             //archivo que contiene la url al driver del token
-        │   
-        FirmadorServidor.jar           //jar que contiene los servicios REST
+        +───FirmadorServicio
+            │   FirmadorServidor.jar   //jar que contiene los servicios REST
+            │   
+            +───config
+                    config.cfg         //archivo que contiene la url al driver del token
+            
 ```
 
 #### Creación del paquete
