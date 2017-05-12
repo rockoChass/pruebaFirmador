@@ -12,7 +12,6 @@
 SERVICE_NAME=firmador-servicio
 PATH_TO_JAR=/usr/bin/FirmadorServicio/FirmadorServidor.jar
 PID_PATH_NAME=/tmp/firmador-servicio
-#PATH_TO_CONFIG=/opt/local/adsib-lector-huellas_1.2/application.properties
 case $1 in
     start)
         echo "Starting $SERVICE_NAME ..."
