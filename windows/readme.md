@@ -1,4 +1,3 @@
-  aaaa
 # Creacion de un Servicio Windows con un archivo JAR Java
 
 Esta es una guia para la creación de servicios (*.jar) para Windows 32-64 bits
@@ -71,5 +70,5 @@ nssm rotate FirmadorService
 ```
 
 Tambien desde cmd ejecutando "services.msc" nos llevara al panel de servicios de windows
-buscando en la lista de servicios, nuestro servicio, podemos ejecutar las opciones (iniciar, detener, reiniciar).
 
+Buscando en la lista de servicios, nuestro servicio, podemos ejecutar las opciones (iniciar, detener, reiniciar).
