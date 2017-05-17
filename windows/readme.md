@@ -1,13 +1,13 @@
-  
+  aaaa
 # Creacion de un Servicio Windows con un archivo JAR Java
 
 Esta es una guia para la creación de servicios (*.jar) para Windows 32-64 bits
 
 ## Prerequisitos
 
-- [NSSM](http://nssm.cc/download) Para Instalar como servicio Windows 32 - 64 bits (necesitamos el archivo nssm.exe)
-- [InnoSetup](https://inno-setup.uptodown.com/windows) Para empaquetar los archivos y generar el instalador
 - Archivo *.jar cuyo main inicia un servicio
+- [NSSM](http://nssm.cc/download) Para Instalar como servicio Windows 32 - 64 bits (necesitamos el archivo nssm.exe en la raiz del proyecto)
+- [InnoSetup](https://inno-setup.uptodown.com/windows) Para empaquetar los archivos y generar el instalador (Manejo Gráfico)
 
 ## Descripción
 
@@ -24,16 +24,16 @@ Se debe tener una carpeta que contendra la estructura de directorios, en este ca
 La estructura utilizada en el proyecto es la siguiente:
 
 ```
-FirmadorServicio    
-│
-+───config                              
-│       config.cfg                   //archivo de configuracion de la url del token
-│   
-+───FirmadorServidor.jar       
-│   
-+───nssm.exe                        //ejecutable que instala nuestro servicio usando a run.bat
-│   
-+───run.bat                         //ejecutable que iniciar el ServidorFirmador.jar
+C:\FirmadorServicio    
+     │
+     +───config                              
+     │       config.cfg                   //archivo de configuracion de la url del token
+     │   
+     +───FirmadorServidor.jar       
+     │   
+     +───nssm.exe                        //ejecutable que instala nuestro servicio usando a run.bat
+     │    
+     +───run.bat                         //ejecutable que iniciar el ServidorFirmador.jar
             
 ```
 
@@ -48,9 +48,13 @@ Con este comando levantamos el servicio de nuestro servicio REST del FirmadorSer
 
 #### Instalación del servicio
 
+Nos ubicamos dentro de la carpeta por CMD y ejecutamos el siguiente comando:
+
 ```
 nssm install FirmadorService C:\firmadorService\run.bat
 ```
+
+Esto nos instalar el servicio FirmadorService en windows
 
 #### Opciones del Servicio
 
@@ -66,5 +70,6 @@ nssm status FirmadorService
 nssm rotate FirmadorService
 ```
 
-Tambien desde cmd <services.msc> buscando en la lista de servicios, nuestro servicio, podemos ejecutar las opciones (iniciar, detener, reiniciar).
+Tambien desde cmd ejecutando "services.msc" nos llevara al panel de servicios de windows
+buscando en la lista de servicios, nuestro servicio, podemos ejecutar las opciones (iniciar, detener, reiniciar).
 
