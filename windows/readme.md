@@ -5,7 +5,7 @@ Esta es una guia para la creación de servicios (*.jar) para Windoes 32-64 bits
 
 ## Prerequisitos
 
-- [NSSM](http://nssm.cc/download) Para Instalar como servicio Windows 32 - 64 bits
+- [NSSM](http://nssm.cc/download) Para Instalar como servicio Windows 32 - 64 bits (necesitamos el archivo nssm.exe)
 - [InnoSetup](https://inno-setup.uptodown.com/windows) Para empaquetar los archivos y generar el instalador
 
 ## Descripción
@@ -28,7 +28,11 @@ FirmadorServicio
 +───config                              
 │       config.cfg                   //archivo de configuracion de la url del token
 │   
-+───FirmadorServidor.jar
++───FirmadorServidor.jar       
+│   
++───nssm.exe                        //ejecutable que instala nuestro servicio usando a run.bat
+│   
++───run.bat                         //ejecutable que iniciar el ServidorFirmador.jar
             
 ```
 
