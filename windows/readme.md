@@ -1,6 +1,6 @@
 # Creacion de un Servicio Windows con un archivo JAR Java
 
-Esta es una guia para la creación de servicios (*.jar) para Windows 32-64 bits
+Esta es una guia para la creación de un servicio Windows Java (*.jar) para 32-64 bits
 
 ## Prerequisitos
 
@@ -10,7 +10,7 @@ Esta es una guia para la creación de servicios (*.jar) para Windows 32-64 bits
 
 ## Descripción
 
-Esta guia contempla la creación de un servicio .jar, el ejemplo contempla las siguientes partes:
+Esta guia contempla la creación de un servicio Windows Java (*.jar)
 
 - La aplicación que se esta empaquetando es un servicio en segundo plano en formato .jar (puede ser cualquier programa ejecutable)
 
