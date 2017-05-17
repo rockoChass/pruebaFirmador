@@ -40,7 +40,7 @@ C:\FirmadorServicio
 Crear un archivo run.bat con el siguiente contenido
 
 ```
-java -jar C:\firmadorService\FirmadorServidor.jar "config/config.cfg"
+java -jar FirmadorServidor.jar "config/config.cfg"
 ```
 
 Con este comando levantamos el servicio de nuestro servicio REST del FirmadorServidor.jar
