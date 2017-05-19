@@ -53,7 +53,7 @@ Nos ubicamos dentro de la carpeta por CMD y ejecutamos el siguiente comando:
 nssm install FirmadorService C:\firmadorService\run.bat
 ```
 
-Esto nos instalar el servicio FirmadorService en windows
+Esto comando nos permite instalar el servicio FirmadorService en windows
 
 #### Opciones del Servicio
 
@@ -65,8 +65,6 @@ nssm stop FirmadorService
 nssm restart FirmadorService
 
 nssm status FirmadorService
-
-nssm rotate FirmadorService
 ```
 
 Tambien desde cmd ejecutando "services.msc" nos llevara al panel de servicios de windows
