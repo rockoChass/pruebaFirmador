@@ -15,6 +15,6 @@ Este repositorio contempla la creación de lo instaladores para los sistemas ope
 
 ## Nota:
 
-- Se crea un *.deb para las distribuciones linux debian
-- Se crea un instalador que desempaqueta los archivos necesarios para instalar e iniciar el servicio
-- Para Mac estamos en proceso de desarrollo
+- En linux se crea un *.deb para las distribuciones linux debian
+- En Windows se crea un instalador que desempaqueta los archivos necesarios para instalar e iniciar el servicio
+- En Mac estamos en proceso de desarrollo
