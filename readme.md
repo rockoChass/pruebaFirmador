@@ -10,7 +10,7 @@ Este repositorio contempla la creación de lo instaladores para los sistemas ope
 ## Instalaciones Previas:
 
 - OpenSC 
-- JRE
+- JRE 8 en adelante
 - Driver para el token a utilizar
 
 ## Nota:
