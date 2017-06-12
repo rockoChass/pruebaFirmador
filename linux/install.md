@@ -54,7 +54,7 @@ $ cd firmador-instaladores/linux/
 Nota: Cuando ejecuten la siguiente linea les abrirá dos veces un archivo en un editor, solo deben salir del editor
 
 ```
-$ sudo fpm --epoch 1 -s dir -e -C FirmadorServicio/ -a all -m "Firmador Estatal" --description "Proyecto Libre de Firma Digital" -v 0.0.1 -t deb -n firmador-servicio --post-install FirmadorServicio/DEBIAN/postinstall.sh
+$ sudo fpm --epoch 1 -s dir -e -C FirmadorServicio/ -a all -m "Firmador Estatal" --description "Proyecto Libre de Firma Digital" -v 0.0.1 -t deb -n FirmadorServicio --post-install FirmadorServicio/DEBIAN/postinstall.sh
 ```
 
 #### Instalación del paquete
