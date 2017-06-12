@@ -30,18 +30,6 @@ C:\FirmadorServicio
 
 Para crear el instalador leer el manual de instalación [install.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/windows/install.md)
 
-#### Opciones del Servicio
-
-```
-nssm start FirmadorService
-
-nssm stop FirmadorService
-
-nssm restart FirmadorService
-
-nssm status FirmadorService
-```
-
 #### Accede a las opciones del servicio en Windows desde services.msc
 
 Desde el cmd ejecutando el comando "services.msc" nos llevara al panel de servicios de windows

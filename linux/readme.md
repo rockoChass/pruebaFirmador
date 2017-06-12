@@ -34,9 +34,9 @@ FirmadorServicio
 
 ```
 
-#### Para crar el Instalador
+#### Para Instalar el Servicio
 
-Para crear el instalador leer el manual de instalación [install.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/linux/install.md)
+Para instalar el servicio leer el manual de instalación [install.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/linux/install.md)
 
 #### Opciones del Servicio
 

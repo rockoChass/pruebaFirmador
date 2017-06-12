@@ -8,7 +8,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 - [OpenSSL](https://www.openssl.org/source/)
 
 
-## Prerequísitos del FirmadorServidor
+## Prerequísitos para instalar el Servicio
 
 - [Git](https://git-scm.com/)
 - [NSSM](http://nssm.cc/download) Para Instalar como servicio Windows 32 - 64 bits (necesitamos el archivo nssm.exe en la raiz del proyecto)
@@ -33,6 +33,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 ```
 > cp windows/ c:/
 ```
+
 ## Nos ubicamos dentro del instalador Windows
 
 ```
@@ -47,4 +48,4 @@ nssm install FirmadorService C:\firmadorService\run.bat
 
 ## Recomendación
 
-Con esto ya tenemos instalado el servicio para Iniciarlo leer el [readme.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/windows/readme.md)
+Con esto ya tenemos instalado el servicio, para Iniciarlo leer el [readme.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/windows/readme.md)
