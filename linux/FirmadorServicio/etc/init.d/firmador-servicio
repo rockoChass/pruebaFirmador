@@ -47,4 +47,11 @@ case $1 in
             echo "$SERVICE_NAME no esta Iniciado ..."
         fi
     ;;
+    status)
+        if [ -f $PID_PATH_NAME ]; then
+            echo "$SERVICE_NAME Iniciado ..."
+        else
+            echo "$SERVICE_NAME no esta Iniciado ..."
+        fi
+    ;;
 esac
