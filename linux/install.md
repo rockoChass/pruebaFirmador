@@ -44,12 +44,16 @@ $ gem install fpm
 $ git clone git@gitlab.geo.gob.bo:firmador_estatal/firmador-instaladores.git
 ```
 
+## Nos ubicamos dentro del instalador Linux
+
+```
+$ cd linux/
+```
+
 ## Creando el *.deb (instalador)
 Nota: Cuando ejecuten la siguiente linea les abrirá dos veces un archivo en un editor, solo deben salir del editor
 
 ```
-$ cd linux/
-
 $ sudo fpm --epoch 1 -s dir -e -C FirmadorServicio/ -a all -m "Firmador Estatal" --description "Proyecto Libre de Firma Digital" -v 0.0.1 -t deb -n firmador-servicio --post-install FirmadorServicio/DEBIAN/postinstall.sh
 ```
 
