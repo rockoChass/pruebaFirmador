@@ -26,6 +26,10 @@ C:\FirmadorServicio
 
 ```
 
+#### Para crar el Instalador
+
+Para crear el instalador leer el manual de instalación [install.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/windows/install.md)
+
 #### Opciones del Servicio
 
 ```
@@ -37,9 +41,6 @@ nssm restart FirmadorService
 
 nssm status FirmadorService
 ```
-#### Para crar el Instalador
-
-Para crear el instalador leer el manual de instalación [install.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/windows/install.md)
 
 #### Accede a las opciones del servicio en Windows desde services.msc
 
