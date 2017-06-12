@@ -4,7 +4,7 @@ Esta es una guía para la creación de paquetes (*.deb) para distribuciones Debi
 
 ## Prerequisitos para el FirmadorServidor
 
-- [JRE-Java](https://www.java.com/es/download/manual.jsp)
+- [JRE-Java versión 8 en Adelante](https://www.java.com/es/download/manual.jsp)
 
 ```
 $ sudo apt-get install openjdk-8-jre
