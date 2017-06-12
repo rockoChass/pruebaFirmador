@@ -31,7 +31,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 ## Copiamos la carpeta FirmadorServicio a la raiz c:/
 
 ```
-> cp windows/ c:/
+> cp windows/FirmadorServicio c:/
 ```
 
 ## Nos ubicamos dentro del instalador Windows
