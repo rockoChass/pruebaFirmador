@@ -47,7 +47,7 @@ $ git clone git@gitlab.geo.gob.bo:firmador_estatal/firmador-instaladores.git
 ## Nos ubicamos dentro del instalador Linux
 
 ```
-$ cd linux/
+$ cd firmador-instaladores/linux/
 ```
 
 ## Creando el *.deb (instalador)
