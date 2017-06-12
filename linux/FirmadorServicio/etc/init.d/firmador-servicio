@@ -14,38 +14,37 @@ PATH_TO_JAR=/usr/bin/FirmadorServicio/FirmadorServidor.jar
 PID_PATH_NAME=/tmp/firmador-servicio
 case $1 in
     start)
-        echo "Starting $SERVICE_NAME ..."
+        echo "Iniciando $SERVICE_NAME ..."
         if [ ! -f $PID_PATH_NAME ]; then
             sudo nohup java -jar $PATH_TO_JAR "config/config.cfg" /tmp 2>> /dev/null >> /dev/null & echo $! > $PID_PATH_NAME
-            echo "$SERVICE_NAME started ..."
+            echo "$SERVICE_NAME Iniciado ..."
         else
-            echo "$SERVICE_NAME is already running ..."
+            echo "$SERVICE_NAME ya esta Iniciado ..."
         fi
     ;;
     stop)
         if [ -f $PID_PATH_NAME ]; then
             PID=$(cat $PID_PATH_NAME);
-            echo "$SERVICE_NAME stoping ..."
+            echo "$SERVICE_NAME Deteniendo ..."
             kill $PID;
-            echo "$SERVICE_NAME stopped ..."
+            echo "$SERVICE_NAME Detenido ..."
             rm $PID_PATH_NAME
         else
-            echo "$SERVICE_NAME is not running ..."
+            echo "$SERVICE_NAME no esta Iniciado ..."
         fi
     ;;
     restart)
         if [ -f $PID_PATH_NAME ]; then
             PID=$(cat $PID_PATH_NAME);
-            echo "$SERVICE_NAME stopping ...";
+            echo "$SERVICE_NAME Deteniendo ...";
             kill $PID;
-            echo "$SERVICE_NAME stopped ...";
+            echo "$SERVICE_NAME Detenido ...";
             rm $PID_PATH_NAME
-            echo "$SERVICE_NAME starting ..."
+            echo "$SERVICE_NAME Iniciando ..."
             sudo nohup java -jar $PATH_TO_JAR "config/config.cfg" /tmp 2>> /dev/null >> /dev/null & echo $! > $PID_PATH_NAME
-            echo "$SERVICE_NAME started ..."
+            echo "$SERVICE_NAME Iniciado ..."
         else
-            echo "$SERVICE_NAME is not running ..."
+            echo "$SERVICE_NAME no esta Iniciado ..."
         fi
     ;;
 esac
- 
