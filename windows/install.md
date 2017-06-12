@@ -5,7 +5,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 ## Prerequísitos del FirmadorServidor
 
 - [JRE-Java versión 8 en Adelante](https://www.java.com/es/download/manual.jsp)
-- [OpenSSL](https://www.openssl.org/source/)
+- [OpenSC](https://github.com/OpenSC/OpenSC)
 
 
 ## Prerequísitos para instalar el Servicio

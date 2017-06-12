@@ -10,10 +10,10 @@ Esta es una guía para la creación de paquetes (*.deb) para distribuciones Debi
 $ sudo apt-get install openjdk-8-jre
 ```
 
-- [OpenSSL](https://www.openssl.org/source/)
+- [OpenSC](https://github.com/OpenSC/OpenSC)
 
 ```
-$ sudo apt-get install openssl
+$ sudo apt-get install opensc-pkcs11
 ```
 
 ## Prerequísitos para crear el Instalador
