@@ -33,7 +33,7 @@ $ sudo apt-get install ruby-dev gcc make
 - [FPM](https://github.com/jordansissel/fpm)
 
 ```
-$ gem install fpm
+$ sudo gem install fpm
 ```
 
 # Creando el instalador para Linux Debian
