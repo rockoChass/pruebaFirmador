@@ -15,22 +15,22 @@ La estructura utilizada en el proyecto es la siguiente:
 FirmadorServicio    
 │
 +───DEBIAN                              
-│       postinstall.sh                   //shell de acciones posteriores a la instalacion
+│       postinstall.sh                   // Shell de acciones posteriores a la instalación
 │   
 +───etc                                 
 │   │   
 │   +───init.d
-│           firmador-servicio           //archivo que configura los estados del servicio(start, stop, restart)
+│           firmador-servicio           // Archivo que configura los estados del servicio(start, stop, restart)
 │   
 +───usr
     │   
     +───bin
         │   
         +───FirmadorServicio
-            │   FirmadorServidor.jar   //jar que contiene los servicios REST
+            │   FirmadorServidor.jar   // JAR que contiene los servicios REST
             │   
             +───config
-                    config.cfg         //archivo que contiene la url al driver del token
+                    config.cfg         // Archivo que contiene la url al driver del token
 
 ```
 
