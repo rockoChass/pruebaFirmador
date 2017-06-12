@@ -1,1 +1,1 @@
-java -jar C:\firmadorService\FirmadorServidor.jar "config/config.cfg"
+java -jar FirmadorServidor.jar "config/config.cfg"
