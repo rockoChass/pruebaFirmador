@@ -65,4 +65,4 @@ $ sudo dpkg -i firmador-servicio_0.0.1_all.deb
 
 ## Recomendación
 
-Para obtener mayor detalle de la forma de paramétrizar se puede consultar la wiki del repositorio del proyecto [wiki](https://github.com/jordansissel/fpm/wiki)
+Para obtener mayor detalle de la forma de paramétrizar el instalador usando FEM, se puede consultar la wiki del repositorio del proyecto [wiki](https://github.com/jordansissel/fpm/wiki)
