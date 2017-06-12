@@ -46,6 +46,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 nssm install FirmadorService C:\firmadorService\run.bat
 ```
 
-## Recomendación
+## Accede a las opciones del servicio en Windows desde services.msc
 
-Con esto ya tenemos instalado el servicio, para Iniciarlo leer el [readme.md](https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores/blob/master/windows/readme.md)
+Desde el cmd ejecutando el comando "services.msc" nos llevara al panel de servicios de windows
+Buscando en la lista de servicios, nuestro servicio, podemos ejecutar las opciones (iniciar, detener, reiniciar).
