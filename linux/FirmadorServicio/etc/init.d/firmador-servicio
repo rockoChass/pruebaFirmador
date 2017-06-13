@@ -1,12 +1,12 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          ...
-# Required-Start:    $syslog
-# Required-Stop:     $syslog
+# Autor: Angel Céspedes Quiroz
+# Skype: acq1305
+# LinkedIn: https://bo.linkedin.com/in/acq1305
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: servicio firmador estatal
-# Description:
+# Description: Script que llama a archivos sh
 #
 ### END INIT INFO
 SERVICE_NAME=firmador-servicio
