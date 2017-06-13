@@ -10,48 +10,26 @@
 #
 ### END INIT INFO
 SERVICE_NAME=firmador-servicio
-PATH_TO_JAR=/usr/bin/FirmadorServicio/FirmadorServidor.jar
-PID_PATH_NAME=/tmp/firmador-servicio
 case $1 in
     start)
         echo "Iniciando $SERVICE_NAME ..."
-        if [ ! -f $PID_PATH_NAME ]; then
-            sudo nohup java -jar $PATH_TO_JAR /tmp 2>> /dev/null >> /dev/null & echo $! > $PID_PATH_NAME
-            echo "$SERVICE_NAME Iniciado ..."
-        else
-            echo "$SERVICE_NAME ya esta Iniciado ..."
-        fi
+        sudo sh /usr/bin/FirmadorServicio/myapp-start.sh
+        echo "$SERVICE_NAME Iniciado ..."
     ;;
     stop)
-        if [ -f $PID_PATH_NAME ]; then
-            PID=$(cat $PID_PATH_NAME);
-            echo "$SERVICE_NAME Deteniendo ..."
-            sudo kill $PID;
-            echo "$SERVICE_NAME Detenido ..."
-            sudo rm $PID_PATH_NAME
-        else
-            echo "$SERVICE_NAME no esta Iniciado ..."
-        fi
+        echo "$SERVICE_NAME Deteniendo ..."
+        sudo /usr/bin/FirmadorServicio/myapp-stop.sh
+        echo "$SERVICE_NAME Detenido ..."
     ;;
     restart)
-        if [ -f $PID_PATH_NAME ]; then
-            PID=$(cat $PID_PATH_NAME);
-            echo "$SERVICE_NAME Deteniendo ...";
-            sudo kill $PID;
-            echo "$SERVICE_NAME Detenido ...";
-            sudo rm $PID_PATH_NAME
-            echo "$SERVICE_NAME Iniciando ..."
-            sudo nohup java -jar $PATH_TO_JAR /tmp 2>> /dev/null >> /dev/null & echo $! > $PID_PATH_NAME
-            echo "$SERVICE_NAME Iniciado ..."
-        else
-            echo "$SERVICE_NAME no esta Iniciado ..."
-        fi
+        echo "$SERVICE_NAME Deteniendo ..."
+        sudo /usr/bin/FirmadorServicio/myapp-stop.sh
+        echo "$SERVICE_NAME Detenido ..."
+        echo "Iniciando $SERVICE_NAME ..."
+        sudo /usr/bin/FirmadorServicio/myapp-start.sh
+        echo "$SERVICE_NAME Iniciado ..."
     ;;
     status)
-        if [ -f $PID_PATH_NAME ]; then
-            echo "$SERVICE_NAME Iniciado ..."
-        else
-            echo "$SERVICE_NAME no esta Iniciado ..."
-        fi
+       sudo /usr/bin/FirmadorServicio/myapp-status.sh
     ;;
 esac
