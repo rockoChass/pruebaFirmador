@@ -18,18 +18,18 @@ case $1 in
     ;;
     stop)
         echo "$SERVICE_NAME Deteniendo ..."
-        sudo /usr/bin/FirmadorServicio/myapp-stop.sh
+        sudo sh /usr/bin/FirmadorServicio/myapp-stop.sh
         echo "$SERVICE_NAME Detenido ..."
     ;;
     restart)
         echo "$SERVICE_NAME Deteniendo ..."
-        sudo /usr/bin/FirmadorServicio/myapp-stop.sh
+        sudo sh /usr/bin/FirmadorServicio/myapp-stop.sh
         echo "$SERVICE_NAME Detenido ..."
         echo "Iniciando $SERVICE_NAME ..."
-        sudo /usr/bin/FirmadorServicio/myapp-start.sh
+        sudo sh /usr/bin/FirmadorServicio/myapp-start.sh
         echo "$SERVICE_NAME Iniciado ..."
     ;;
     status)
-        sudo /usr/bin/FirmadorServicio/myapp-status.sh
+        sudo sh /usr/bin/FirmadorServicio/myapp-status.sh
     ;;
 esac
