@@ -30,6 +30,6 @@ case $1 in
         echo "$SERVICE_NAME Iniciado ..."
     ;;
     status)
-       sudo /usr/bin/FirmadorServicio/myapp-status.sh
+        sudo /usr/bin/FirmadorServicio/myapp-status.sh
     ;;
 esac
