@@ -1,1 +1,1 @@
-sudo java -jar FirmadorServidor.jar
+sudo java -jar /usr/bin/FirmadorServicio/FirmadorServidor.jar
