@@ -1,1 +1,1 @@
-sudo java -jar /usr/bin/FirmadorServicio/FirmadorServidor.jar
+java -jar /usr/bin/FirmadorServicio/FirmadorServidor.jar "/usr/bin/FirmadorServicio/config/config.cfg"
