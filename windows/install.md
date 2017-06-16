@@ -43,7 +43,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 ## Instalación del servicio
 
 ```
-nssm install FirmadorService C:\firmadorService\run.bat
+nssm.exe install FirmadorService C:\firmadorService\run.bat
 ```
 
 ## Accede a las opciones del servicio en Windows desde services.msc
