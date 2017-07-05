@@ -41,7 +41,7 @@ $ sudo gem install fpm
 ## Bajar el repositorio
 
 ```
-$ git clone git@gitlab.geo.gob.bo:firmador_estatal/firmador-instaladores.git
+$ git clone https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores.git
 ```
 
 ## Nos ubicamos dentro del instalador Linux

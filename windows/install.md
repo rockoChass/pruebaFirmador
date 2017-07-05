@@ -19,7 +19,7 @@ Esta es una guía para la creación de un Servicio Windows 32-64 bits del Firmad
 ## Bajar el repositorio, desde CMD
 
 ```
-> git clone git@gitlab.geo.gob.bo:firmador_estatal/firmador-instaladores.git
+> git clone https://gitlab.geo.gob.bo/firmador_estatal/firmador-instaladores.git
 ```
 
 ## Nos ubicamos dentro del instalador Windows
