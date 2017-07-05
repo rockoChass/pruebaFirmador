@@ -7,9 +7,13 @@ Este repositorio contempla la creación de lo instaladores para los sistemas ope
 - Debian 32-64 bits (7 en adelante). (completado y testeado)
 - Mac                                (en proceso)
 
+## Desarrollador
+
+*  Angel Céspedes Quiroz   <acespedes@adsib.gob.bo>
+
 ## Instalaciones Previas:
 
-- OpenSC 
+- OpenSC
 - JRE 8 en adelante
 - Driver para el token a utilizar
 
