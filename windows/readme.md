@@ -6,6 +6,10 @@ Esta es una guía para la creación de un servicio Windows 32-64 bits Java (*.ja
 
 - La aplicación que se esta empaquetando es un servicio en segundo plano en formato .jar (puede ser cualquier programa ejecutable)
 
+## Desarrollador
+
+*  Angel Céspedes Quiroz   <acespedes@adsib.gob.bo>
+
 #### Creación del arbol de directorios
 
 Se debe tener una carpeta que contendra la estructura de directorios, en este caso la carpeta tiene el nombre "FirmadorServicio", se debe considerar a esta carpeta como la raiz de nuestro sistema de archivos "C:/FirmadorServicio" y debemos replicar la estructura de carpetas que se copiaran al momento de la instalación.

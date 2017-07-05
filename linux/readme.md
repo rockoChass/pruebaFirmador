@@ -6,6 +6,10 @@ Esta guía contempla la creación de un paquete .deb, el ejemplo contempla las s
 
 - La aplicación que se esta empaquetando es un servicio en segundo plano en formato .jar (puede ser cualquier programa ejecutable)
 
+## Desarrollador
+
+*  Angel Céspedes Quiroz   <acespedes@adsib.gob.bo>
+
 #### Creación del arból de directorios
 Se debe tener una carpeta que contendrá la estructura de directorios, en este caso la carpeta tiene el nombre "FirmadorServicio", se debe considerar a esta carpeta como la raíz de nuestro sistema de archivos "/" y debemos replicar la estructura de carpetas que se copiaran al momento de la instalación.
 
