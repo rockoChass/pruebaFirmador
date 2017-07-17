@@ -9,7 +9,8 @@ Este repositorio contempla la creación de lo instaladores para los sistemas ope
 
 ## Desarrollador
 
-*  Angel Céspedes Quiroz   <acespedes@adsib.gob.bo>
+*  [Angel Céspedes Quiroz](https://bo.linkedin.com/in/acq1305)
+*  Correo:  <acespedes@adsib.gob.bo>
 
 ## Instalaciones Previas:
 
