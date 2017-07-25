@@ -44,12 +44,14 @@ Para instalar el servicio leer el manual de instalación [install.md](https://gi
 
 #### Opciones del Servicio
 
+La llamada "start" al ser ejecutado desde la terminal queda a la espera de un ENTER para salir del mensaje, también puede simplemente cerrar la terminal 
+
 ```
-sudo /etc/init.d/firmador-servicio start
+/etc/init.d/firmador-servicio start
 
-sudo /etc/init.d/firmador-servicio stop
+/etc/init.d/firmador-servicio stop
 
-sudo /etc/init.d/firmador-servicio restart
+/etc/init.d/firmador-servicio restart
 
-sudo /etc/init.d/firmador-servicio status
+/etc/init.d/firmador-servicio status
 ```
