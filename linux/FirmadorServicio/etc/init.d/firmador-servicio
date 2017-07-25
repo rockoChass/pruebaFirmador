@@ -13,20 +13,35 @@ SERVICE_NAME=firmador-servicio
 case $1 in
     start)
         echo "Iniciando $SERVICE_NAME ..."
-        sh /usr/bin/FirmadorServicio/config/myapp-start.sh &
-        echo "$SERVICE_NAME Iniciado ..."
+        pid=`ps aux | grep FirmadorServidor | awk '{print $2}'`
+        if [ ! -f $pid ]; then
+          sh /usr/bin/FirmadorServicio/config/myapp-start.sh &
+        else
+          echo "el servicio esta iniciado ..."
+        fi
     ;;
     stop)
         echo "$SERVICE_NAME Deteniendo ..."
-        sh /usr/bin/FirmadorServicio/config/myapp-stop.sh
-        echo "$SERVICE_NAME Detenido ..."
+        pid=`ps aux | grep FirmadorServidor | awk '{print $2}'`
+        if [ ! -f $pid ]; then
+          echo "el servicio esta detenido ..."
+        else
+          sh /usr/bin/FirmadorServicio/config/myapp-stop.sh
+          echo "$SERVICE_NAME Detenido ..."
+        fi
     ;;
     restart)
         echo "$SERVICE_NAME Deteniendo ..."
-        sh /usr/bin/FirmadorServicio/config/myapp-stop.sh
-        echo "$SERVICE_NAME Detenido ..."
-        echo "Iniciando $SERVICE_NAME ..."
-        sh /usr/bin/FirmadorServicio/config/myapp-start.sh
+        pid=`ps aux | grep FirmadorServidor | awk '{print $2}'`
+        if [ ! -f $pid ]; then
+          echo "Iniciando $SERVICE_NAME ..."
+          sh /usr/bin/FirmadorServicio/config/myapp-start.sh &
+        else
+          sh /usr/bin/FirmadorServicio/config/myapp-stop.sh
+          echo "$SERVICE_NAME Detenido ..."
+          echo "Iniciando $SERVICE_NAME ..."
+          sh /usr/bin/FirmadorServicio/config/myapp-start.sh &        
+        fi
         echo "$SERVICE_NAME Iniciado ..."
     ;;
     status)
