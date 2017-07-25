@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/share/sh
 ### BEGIN INIT INFO
 # Autor: Angel Céspedes Quiroz
 # Skype: acq1305
@@ -13,23 +13,23 @@ SERVICE_NAME=firmador-servicio
 case $1 in
     start)
         echo "Iniciando $SERVICE_NAME ..."
-        sudo sh /usr/bin/FirmadorServicio/config/myapp-start.sh
+        sudo sh /usr/share/FirmadorServicio/config/myapp-start.sh
         echo "$SERVICE_NAME Iniciado ..."
     ;;
     stop)
         echo "$SERVICE_NAME Deteniendo ..."
-        sudo sh /usr/bin/FirmadorServicio/config/myapp-stop.sh
+        sudo sh /usr/share/FirmadorServicio/config/myapp-stop.sh
         echo "$SERVICE_NAME Detenido ..."
     ;;
     restart)
         echo "$SERVICE_NAME Deteniendo ..."
-        sudo sh /usr/bin/FirmadorServicio/config/myapp-stop.sh
+        sudo sh /usr/share/FirmadorServicio/config/myapp-stop.sh
         echo "$SERVICE_NAME Detenido ..."
         echo "Iniciando $SERVICE_NAME ..."
-        sudo sh /usr/bin/FirmadorServicio/config/myapp-start.sh
+        sudo sh /usr/share/FirmadorServicio/config/myapp-start.sh
         echo "$SERVICE_NAME Iniciado ..."
     ;;
     status)
-        sudo sh /usr/bin/FirmadorServicio/config/myapp-status.sh
+        sudo sh /usr/share/FirmadorServicio/config/myapp-status.sh
     ;;
 esac
